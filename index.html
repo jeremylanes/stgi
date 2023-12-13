@@ -1,0 +1,130 @@
+<!-- GGT 2020 ssr TP de virtualisation avec le Dr Julius  (Groupe 2) -->
+
+<!-- sujet: Un site web d'une association sans but lucratif dont 
+    les activités sont orientées vers la protection de l'environement -->
+
+<!-- by jeremylane  http://jeremylane.info -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link
+    rel="icon"
+    href="resources/images/logo/logo.ico"
+    type="image/x-icon"
+  />
+    <title>STGI | Jeremy Lane</title>
+    <script
+      src="https://kit.fontawesome.com/670e8c442a.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <section id="home" class="home-section">
+        <header class="header">
+            <img src="img/logo/logo.png" alt="logo du site" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#home" data-text="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#nos-services" data-text="Services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#nos-actions" data-text="Our Actions">Our Actions</a>
+                    </li>
+                    <li>
+                        <a href="#propo" data-text="Contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="burger-container">
+                    <div class="burger"></div>
+                </div>
+            </nav>
+        </header>
+        
+            <h1 class="big-title">Discover your world with STGI  </h1>
+            <a href="#foire" class="scrol-link" >
+                <span data-text="Scrol" class="scrol-text">Scrol</span>
+                <i class="scroll-icon fas fa-angle-down"></i>
+                 <!-- scrol icon à chercher    -->
+            </a>
+
+    </section>
+    <section id="nos-services" class="second-section" >
+        <div class="container-1">
+            <div class="fils fils 1">
+                <h2 class="section-title">Welcome to our world</h2>
+            <p class="para">The species that survive are not the strongest, nor the most intelligent, but the ones that adapt best to change.</p>
+            </div>
+            <!--  l'image à droite ne s'indentera pas pour respecter la maquette -->
+            <div class="img-1 fils fils-2"></div>
+            
+            <div class="img-2 fils fils-3"></div>
+        </div>
+    </section>   
+    <section id="nos-actions" class="section-3">
+        <div class="box">
+            <h2 class="section-title">Explore <br> Our World</h2>
+            <p class="para">We do not have two hearts, one for men and the other for animals,
+                <br> we have heart or we do not.</p>
+        </div>
+    </section>
+    <section class="section-4">
+        <div class="boite">
+            <div id="carousel">
+                <div class="images">
+                    <div class="image image1"></div>
+                    <div class="image image2"></div>
+                    <div class="image image3"></div>
+                    <div class="image image4"></div>
+                    <div class="image image5"></div>
+                    <div class="image image6"></div>
+                    <div class="image image7"></div>
+                </div>
+            </div>
+        </div>
+        
+            <h2 id="foire" class="section-title"> Land of <br> Discovery</h2>
+            
+    </section>
+
+    <!-- lel footer n'est pas present sur la maquette du site -->
+    <footer id="propo">
+        <span>&copy; 2021-Lanes_Industrie</span>
+        <a href="https://goo.gl/maps/b7QuJyRMyLyNxkGy8">
+            <i class="fas fa-map-marker-alt posision"></i>
+            <p class="face-p">Position</p>
+        </a>
+        <a href="http://bituyangu.com/">
+            <i class="fab fa-blogger bituyangu"></i>
+            <p>bituYangu.com</p>
+        </a>
+        <a href="https://jeremylanes17@gmail.com">
+            <i class="fas fa-envelope mail-ico"></i>
+            <p class="face-p">Gmail</p>
+        </a>
+        <a href="https://www.instagram.com/bituyangu/">
+            <i class="fab fa-instagram-square insta-ico"></i>
+            <p class="face-p">Instagram</p>
+        </a>
+            
+    </footer>
+    <!--     le script est utiliser just pour la responsivité de la bare de navigation
+    il est à noter que nou pourion l'enlever et ne pas avoir le devilement de la barre de navigation pour des ecrant minimes -->  
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.nav-links');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
+<!--  La page est totalement responsive et s'adapte à tout type d'ecrant en largeur jusqu'à 10px et en hauteur justqu'à 400px -->
